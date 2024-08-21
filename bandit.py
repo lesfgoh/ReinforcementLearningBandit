@@ -77,7 +77,7 @@ def index():
 
 @app.route('/pull/<int:arm>', methods=['GET'])
 def pull(arm):
-    reward = bandit.generate_reward(arm)
+    bandit.generate_reward(arm)
     return render_template('result.html', arm=arm, reward=bandit.results[arm], param=bandit.params[arm], dist = bandit.dist[arm])
 
 @app.route('/reset')
