@@ -34,4 +34,4 @@ Install dependencies:
 Run the web app via terminal:
 `python bandit.py`
 
-Finally, to access the web app, please go to `http://127.0.0.1:5000/` on your web browser.
+Finally, to access the web app, please go to `http://127.0.0.1:5000/entry` on your web browser.
