@@ -23,8 +23,10 @@ For Installation:
 Please clone this project via `https://github.com/lesfgoh/ReinforcementLearningBandit.git`.
 
 Create a virtual environmet: 
-`python3 -m venv venv
-source venv/bin/activate`
+```
+python3 -m venv venv
+source venv/bin/activate
+```
 
 Install dependencies:
 `pip install -r requirements.txt`
