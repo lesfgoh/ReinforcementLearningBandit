@@ -24,7 +24,7 @@ class MultiArmedBandit:
         if dist in ["normal", "uniform", "beta"]:
             return (np.random.uniform(0,10), np.random.uniform(0,10))
         else:
-            return np.random.randint
+            return np.random.randint(0,10)
         
     def generate_reward(self, arm):
         dist = self.dist[arm]
