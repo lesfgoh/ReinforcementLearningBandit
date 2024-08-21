@@ -35,3 +35,15 @@ Run the web app via terminal:
 `python bandit.py`
 
 Finally, to access the web app, please go to `http://127.0.0.1:5000/entry` on your web browser.
+
+<img width="483" alt="Screenshot 2024-08-21 at 6 05 21 PM" src="https://github.com/user-attachments/assets/dc3c6f99-d2cf-413d-ba88-f840a6b16da8">
+
+[Multi-Armed Bandit Game.pdf](https://github.com/user-attachments/files/16690000/Multi-Armed.Bandit.Game.pdf)
+
+
+<img width="449" alt="Screenshot 2024-08-21 at 6 06 32 PM" src="https://github.com/user-attachments/assets/31e7feba-9fab-4886-879a-65d7e8c71eae">
+
+
+
+
+
