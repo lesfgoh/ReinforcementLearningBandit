@@ -22,7 +22,7 @@ For Installation:
 
 Please clone this project via `https://github.com/lesfgoh/ReinforcementLearningBandit.git`.
 
-Create a virtual environmet: 
+Create a virtual environment: 
 ```
 python3 -m venv venv
 source venv/bin/activate
@@ -31,7 +31,7 @@ source venv/bin/activate
 Install dependencies:
 `pip install -r requirements.txt`
  
-Run the web app:
+Run the web app via terminal:
 `python bandit.py`
 
 Finally, to access the web app, please go to `http://127.0.0.1:5000/` on your web browser.
