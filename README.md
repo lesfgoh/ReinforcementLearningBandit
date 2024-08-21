@@ -28,7 +28,7 @@ source venv/bin/activate`
 
 Install dependencies:
 `pip install -r requirements.txt`
-
+ 
 Run the web app:
 `python bandit.py`
 
