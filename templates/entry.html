@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure Multi-Armed Bandit</title>
+</head>
+<body>
+    <h1>Configure Multi-Armed Bandit</h1>
+    <form method="post">
+        <label for="n_arms">Number of Arms:</label>
+        <input type="number" id="n_arms" name="n_arms" min="1" required><br><br>
+
+        <div id="arms">
+            <!-- JavaScript will generate fields here based on the number of arms -->
+        </div>
+
+        <input type="submit" value="Start Game">
+    </form>
+    <script>
+        document.getElementById('n_arms').addEventListener('input', function () {
+            const armsDiv = document.getElementById('arms');
+            armsDiv.innerHTML = '';
+            const n_arms = parseInt(this.value);
+
+            for (let i = 0; i < n_arms; i++) {
+                armsDiv.innerHTML += `
+                    <h3>Arm ${i + 1}</h3>
+                    <label for="dist_${i}">Distribution:</label>
+                    <select id="dist_${i}" name="dist_${i}">
+                        <option value="normal">Normal</option>
+                        <option value="uniform">Uniform</option>
+                        <option value="beta">Beta</option>
+                        <option value="bernoulli">Bernoulli</option>
+                    </select><br>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

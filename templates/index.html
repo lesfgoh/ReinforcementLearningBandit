@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Armed Bandit Game</title>
+</head>
+<body>
+    <h1>Multi-Armed Bandit Game</h1>
+    <p>Click on an arm to pull it and see the reward.</p>
+    <div style="display: flex; justify-content: space-around;">
+        {% for arm in arms %}
+            <div style="text-align: center;">
+                <h3>Arm {{ arm + 1 }}</h3>
+                <p>Distribution: {{ dist[arm] }} ~ {{params[arm]}}</p>
+                <a href="{{ url_for('pull', arm=arm) }}">
+                    <button style="padding: 10px; font-size: 16px;">Pull Arm {{ arm + 1 }}</button>
+                </a>
+                <p>Rewards so far:</p>
+                    {% for reward in rewards[arm] %}
+                        <div style="text-align: center;"> 
+                                <p>{{reward}}</p>
+                        </div>
+                    {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    <div style = "display: flex; justify-content: space-around;">
+        <div style="text-align: center;">
+            <a href="{{ url_for('reset', reset = reset) }}">
+                <button style="padding: 10px; font-size: 16px;"> Reset </button>
+            </a>
+        </div>
+    </div>
+    <div style="align-self: center; justify-content: space-around;">
+        <a href = "{{ url_for('entry', entry = entry) }}">
+            <button style = "padding: 10px; font-size: 20px;"> Return to entry page </button>
+        </a>
+    </div>
+</body>
+</html>
