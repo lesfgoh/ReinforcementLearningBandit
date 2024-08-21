@@ -22,9 +22,14 @@
                                 <p>{{reward}}</p>
                         </div>
                     {% endfor %}
+                    <p>Average rewards: {{average[arm]}}</p>
             </div>
         {% endfor %}
     </div>
+    <h2>Rewards Over Time for Each Arm</h2>
+    {% if plot_url %}
+        <img src="data:image/png;base64,{{ plot_url }}" alt="Rewards Plot">
+    {% endif %}
     <div style = "display: flex; justify-content: space-around;">
         <div style="text-align: center;">
             <a href="{{ url_for('reset', reset = reset) }}">
