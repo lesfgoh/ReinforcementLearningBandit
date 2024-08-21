@@ -1,6 +1,6 @@
 Overview:
 
-This project is a web-based application that simulates a Multi-Armed Bandit problem, as presented in course MH4521 from SPMS, NTU.
+This project is a web-based application that simulates a Multi-Armed Bandit problem, as presented in the module Reinforcement Learning (MH4521) from SPMS, Nanyang Tech University.
 It allows users to interact with different bandit arms, each associated with a specific probability distribution. 
 Users can configure the type of distributions for each arm, customize their parameters, and visualize the rewards generated from pulling the arms.
 
