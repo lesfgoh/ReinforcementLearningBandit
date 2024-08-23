@@ -47,7 +47,7 @@ class MultiArmedBandit:
         return [statistics.mean(x) if x else [0] for x in self.results]
     
     def generate_total_average(self):
-        return sum([statistics.mean(x) if x else [0] for x in self.results  ])
+        return sum([statistics.mean(x) if x else [0] for x in self.results])
 
 
 @app.route('/')
